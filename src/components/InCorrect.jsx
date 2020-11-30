@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function InCorrect() {
+export default function InCorrect({ incorrect }) {
     return (
         <div>
-            InCorrect
+            Incorrect: {incorrect}
         </div>
     )
 }

@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function Answer() {
+export default function Answer({ option, handleChange }) {
     return (
         <div>
-            Answer
+            <button value={option} onClick={handleChange}>
+                {option}
+            </button>
         </div>
     )
 }

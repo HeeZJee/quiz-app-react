@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Correct() {
+export default function Correct({ correct }) {
     return (
         <div>
-            Correct
+            Correct: {correct}
         </div>
     )
 }

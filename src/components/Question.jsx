@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function Question() {
+export default function question({ question }) {
+
+
     return (
-        <div>
-            Question
+        <div >
+            {question}
         </div>
     )
 }

@@ -4,10 +4,11 @@ import InCorrect from './InCorrect';
 
 class ScoreArea extends Component {
     render() {
+        const { correct, incorrect } = this.props
         return (
             <>
-                <Correct />
-                <InCorrect />
+                <Correct correct={correct} />
+                <InCorrect incorrect={incorrect} />
             </>
         );
     }

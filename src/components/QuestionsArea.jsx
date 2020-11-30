@@ -4,10 +4,12 @@ import Question from './Question';
 
 class QuestionsArea extends Component {
     render() {
+        const { data, handleChange } = this.props
+
         return (
             <>
-                <Question />
-                <AnswerList />
+                <Question question={data.question} />
+                <AnswerList options={data.options} handleChange={handleChange} />
             </>
         );
     }
