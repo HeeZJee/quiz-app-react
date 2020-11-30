@@ -1,9 +1,15 @@
 import React from 'react'
+import styled from 'styled-components'
+
 
 export default function InCorrect({ incorrect }) {
     return (
-        <div>
+        <Wrapper>
             Incorrect: {incorrect}
-        </div>
+        </Wrapper>
     )
 }
+
+const Wrapper = styled.div`
+text-align: center;
+`

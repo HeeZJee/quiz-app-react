@@ -4,8 +4,10 @@ export default function question({ question }) {
 
 
     return (
-        <div >
-            {question}
+        <div style={{ textAlign: 'center' }}>
+            <h4>
+                {question}
+            </h4>
         </div>
     )
 }

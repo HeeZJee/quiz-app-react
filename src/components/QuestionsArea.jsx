@@ -9,7 +9,7 @@ class QuestionsArea extends Component {
         return (
             <>
                 <Question question={data.question} />
-                <AnswerList options={data.options} handleChange={handleChange} />
+                <AnswerList options={data.options} handleChange={handleChange} correct={data.correct} />
             </>
         );
     }
